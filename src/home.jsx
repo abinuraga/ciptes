@@ -6,6 +6,7 @@ import bgImage2 from "./img/bg-7.jpg"
 import {FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaGavel, FaArrowRight} from "react-icons/fa";
 import {LuUsersRound, LuChartColumnIncreasing, LuClock } from "react-icons/lu";
 import Navbar from "./component/Navbar";
+import Logocaraousel from "./component/caraousel";
 import { HashLink } from "react-router-hash-link";
 
 import porto1 from "./img/mayora.jpg";
@@ -36,7 +37,7 @@ function Homepage() {
         id="hero"
         className="flex min-h-screen flex-col items-center justify-center bg-White-100 pt-24"
       >
-        <img src={bgImage2} alt="background-effect" className="fixed inset-0 h-full w-full object-cover -z-20"/>
+        <img src={bgImage2} alt="background-effect" className="absolute inset-0 h-full w-full object-cover -z-20"/>
 
         {/* overlay */}
         <div className="absolute inset-0 bg-blue-950/65 -z-20"></div>
@@ -51,6 +52,8 @@ function Homepage() {
         hover:bg-sky-500 hover:shadow-lg">Konsultasi Sekarang</HashLink>
         
       </section>
+      
+      <Logocaraousel />
 
       {/* About */}
       <section
@@ -252,12 +255,6 @@ function Homepage() {
               (PBG), dan Kelaikan Fungsi Bangunan (SLF).
             </p>
 
-            <HashLink to="/project"
-            className="mt-6 inline-flex items-right rounded-full bg-orange-400 px-6 py-2 justify-end text-sm font-medium text-blue-600 opacity-0 transition-all duration-300 group-hover:opacity-100">
-              <span className="ml-2 transition-transform duration-300 text-[16px] group-hover:translate-x-1">Learn More</span>
-              <FaArrowRight className="ml-2 mx-auto max-w-6xl text-2xl text-blue-700"/>
-            </HashLink>
-          
           </div>
 
           {/* card 3 */}
@@ -272,13 +269,7 @@ function Homepage() {
               Teknis Emisi dan Baku Mutu Air Limbah, Rincian Teknis
               Penyimpanan Limbah B3, serta AMDAL (DELH).
             </p>
-
-            <HashLink to="/project"
-            className="mt-6 inline-flex items-right rounded-full bg-orange-400 px-6 py-2 justify-end text-sm font-medium text-blue-600 opacity-0 transition-all duration-300 group-hover:opacity-100">
-              <span className="ml-2 transition-transform duration-300 text-[16px] group-hover:translate-x-1">Learn More</span>
-              <FaArrowRight className="ml-2 mx-auto max-w-6xl text-2xl text-blue-700"/>
-            </HashLink>
-
+    
           </div>
 
           {/* card 4 */}
@@ -290,19 +281,20 @@ function Homepage() {
             <p className="text-[15px] leading-6 text-center text-light text-grey-500">
               Konsultan Perencanaan Bangunan Gedung. Perencanaan dengan cakupan yang luas
               dan inklusif. Setiap desain diproses berdasarkan kepatuhan terhadap regulasi yang berlaku.
-            </p>
-
-            <HashLink to="/project"
-            className="mt-6 inline-flex items-right rounded-full bg-orange-400 px-6 py-2 justify-end text-sm font-medium text-blue-600 opacity-0 transition-all duration-300 group-hover:opacity-100">
-              <span className="ml-2 transition-transform duration-300 text-[16px] group-hover:translate-x-1">Learn More</span>
-              <FaArrowRight className="ml-2 mx-auto max-w-6xl text-2xl text-blue-700"/>
-            </HashLink>
+            </p> 
 
           </div>
-
           
 
         </div>
+
+        <div className="mt-10 flex justify-center">
+          <HashLink to="/project" className="mt-10 inline-flex items-center justify-center rounded-full 
+        bg-orange-600 px-8 py-3 text-[20px] font-medium tracking-wide 
+        text-white transition-all duration-500 hover:-translate-y-1 
+        hover:bg-sky-500 hover:shadow-lg" data-aos="fade-up" data-aos-delay="300">Learn more <FaArrowRight className="ml-2 mx-auto max-w-6xl text-2xl text-blue-700"/></HashLink>
+        </div>
+
       </div>
       </section>
       
