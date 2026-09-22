@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import AOS from "aos";
 import 'aos/dist/aos.css';
+import {FaMapMarkerAlt, FaPhoneAlt, FaEnvelope,} from "react-icons/fa";
 
 import slf1 from "./slf/pt-mayora1.jpg";
 import slf1_2 from "./slf/pt-mayora2.jpg";
@@ -244,6 +245,46 @@ function Project() {
 
 
       </section>
+
+      {/*footer section*/}
+        
+        <footer id="footer" className="bg-slate-900 py-16 text-white">
+
+          <div className="mx-auto max-w-7xl px-6">
+
+            <div className="grid gap-10 lg:grip-cols-3">
+
+              <div data-aos="fade-up">
+                <h2 className="text-2xl font-bold">PT.CONSULINDO INTI PRIMA
+
+                </h2>
+                
+                <div className="mt-6 space-y-4 text-gray-300">
+                  <div className="flex items-start gap-5">
+                    <FaMapMarkerAlt className="mt-2 text-xs text-white"/>
+                   <p><strong className="text-white">Alamat :</strong> {""}Cilegon Business Square Block B.19,
+                      Kedaleman,
+                      Cibeber,
+                      Kota Cilegon</p>
+                  
+                    
+                  </div>
+
+                  <div className="flex items-start gap-5">
+                    <FaPhoneAlt className="mt-2 text-xs text-white"/>
+                    <p><strong className="text-white">Hubungi :</strong>{" "}0254-7877039</p>
+                  </div>
+
+                  <div className="flex items-start gap-5">
+                    <FaEnvelope className="mt-2 text-xs text-white"/>
+                    <p><strong className="text-white">Email :</strong>{""} intiprimaconsulindo@gmail.com</p>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
 
       
         </>
