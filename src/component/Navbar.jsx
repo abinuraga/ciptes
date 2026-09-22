@@ -58,7 +58,7 @@ function Navbar () {
 
                         <li>
                             <Link to="/project" className="transition hover:text-blue-600">
-                            Project 
+                            Experience 
                             </Link>
                         </li>
 

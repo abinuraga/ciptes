@@ -13,10 +13,19 @@ import slf3_2 from "./slf/pt-graha-cemerlang2.jpeg";
 import slf3_3 from "./slf/pt-graha-cemerlang3.jpeg";
 import slf4 from "./slf/pt-delifood1.jpg";
 import slf4_2 from "./slf/pt-delifood2.jpg";
-import slf4_3 from "./slf/pt-delifood3.jpg";
-import slf5 from "./slf/pt-adhiwesa-mandiri1.jpg";
-import slf5_2 from "./slf/pt-adhiwesa-mandiri2.jpg";
-import slf5_3 from "./slf/pt-adhiwesa-mandiri3.jpg";
+import slf4_3 from "./slf/siteplan-delifood.jpg";
+import slf5 from "./slf/siteplan-gramedia.jpg";
+import slf6 from "./slf/SLF_PT SYAQUA.jpg";
+import slf6_1 from "./slf/site-syaqua.jpg";
+import pbg1 from "./pbg/siteplan-jiang yun zhong.jpg";
+import pbg2 from "./pbg/siteplan-ruko korelet.jpg";
+import pbg3 from "./pbg/pbg_rs_doc.jpeg";
+import pbg3_1 from "./pbg/pbg_rs_site.jpg";
+import pbg4 from "./pbg/siteplan-lazuli.jpg";
+import arc1 from "./img/untara.png";
+import arc1_2 from "./img/untara2.png";
+import arc2 from "./img/PT National Label.png";
+import arc2_2 from "./img/PT National Label3.png";
 import Navbar from "./component/Navbar";
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
@@ -50,7 +59,7 @@ const project = [
 
   {
     id: 4,
-    category: "PBG",
+    category: "SLF",
     title: "PT.DELI FOOD",
     image: slf4,
     gallery: [slf4, slf4_2, slf4_3],
@@ -59,18 +68,73 @@ const project = [
   {
     id: 5,
     category: "PBG",
-    title: "PBG 5",
-    image: slf5,
-    gallery: [slf5, slf5_2, slf5_3],
+    title: "PT. JIANG YUN ZHONG",
+    image: pbg1,
+    gallery: [pbg1],
   },
+
+  {
+    id: 6,
+    category: "SLF",
+    title: "PT. SYAQUA INDONESIA",
+    image: slf6,
+    gallery: [slf6, slf6_1],
+  },
+
+  {
+    id: 7,
+    category: "PBG",
+    title: "RUKO KORELET",
+    image: pbg2,
+    gallery: [pbg2],
+  },
+
+  {
+    id: 8,
+    category: "PBG",
+    title: "RS BUNDA SEJAHTERA",
+    image: pbg3,
+    gallery: [pbg3, pbg3_1],
+  },
+
+  {
+    id: 9,
+    category: "SLF",
+    title: "GRAMEDIA BSD",
+    image: slf5,
+    gallery: [slf5],
+  },
+
+  {
+    id: 10,
+    category: "PBG",
+    title: "PT. LAZULI KARYA SARANA",
+    image: pbg4,
+    gallery: [slf4],
+  },
+
+  {
+    id: 11,
+    category: "DESAIN",
+    title: "KAMPUS UNTARA",
+    image: arc1,
+    gallery: [arc1, arc1_2],
+  },
+
+  {
+    id: 12,
+    category: "DESAIN",
+    title: "PT. NATIONAL LABEL",
+    image: arc2,
+    gallery: [arc2, arc2_2],
+  },
+  
 ];
 const categories = [
   "All",
   "SLF",
   "PBG",
   "DESAIN",
-  "AMDAL",
-  "UKL & UPL",
   
 ];
 
@@ -144,7 +208,7 @@ function Project() {
         <section id="Project" className="py-20 bg-blue-100">
         <div  className="mx-auto max-w-7xl px-6 text-center" data-aos="fade-up">
           <h2 className="mt-14 text-5xl font-bold text-gray-900">
-            RIWAYAT PROJEK LAPANGAN
+            PENGALAMAN PROJEK
           </h2>
           <div className="mx-auto mt-4 mb-14 h-1 w-20 rounded bg-sky-500"></div>
           <p className="mt-6 textlg text-gray-600"></p>
