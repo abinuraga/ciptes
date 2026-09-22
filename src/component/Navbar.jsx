@@ -27,7 +27,7 @@ function Navbar () {
                         </li>
 
                         <li>
-                            <HashLink smooth to="/#about" classname="transition hover:text-blue-600">
+                            <HashLink smooth to="/#about" className="transition hover:text-blue-600">
                             Tentang Kami
                             </HashLink>
                         </li>
