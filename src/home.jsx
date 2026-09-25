@@ -30,16 +30,16 @@ function Homepage() {
         id="hero"
         className="relative flex min-h-screen w-full flex-col items-center justify-center overflow-hidden bg-White-100 pt-24"
       >
-        <img src={bgImage2} alt="background-effect" className="absolute inset-0 h-full w-full object-cover -z-20"/>
+        <img src={bgImage2} alt="background-effect" className="absolute inset-0 z-0 h-full w-full object-cover"/>
 
         {/* overlay */}
-        <div className="absolute inset-0 bg-blue-950/65 -z-20"></div>
+        <div className="absolute inset-0 z-0 bg-blue-950/65"></div>
         
         <h1 className="relative z-10 max-w-5xl text-center text-3xl font-bold text-green-400 sm:text-4xl md:text-5xl">
           WELCOME TO PT. CONSULINDO INTI PRIMA
         </h1>
         
-        <HashLink smooth to="/#contact" className="mt-8 inline-flex items-center justify-center rounded-full 
+        <HashLink smooth to="/#contact" className="relative z-10 mt-8 inline-flex items-center justify-center rounded-full 
         bg-orange-600 px-8 py-3 text-[20px] font-medium tracking-wide 
         text-white transition-all duration-500 hover:-translate-y-1 
         hover:bg-sky-500 hover:shadow-lg">Konsultasi Sekarang</HashLink>
@@ -58,7 +58,7 @@ function Homepage() {
 
           {/*sisi kiri */}
           <div>
-            <h2 className="mt-2 mb-6 text-center text-3xl font-bold leading-tight text-blac sm:text-4xl md:mt-4 md:mb-8 md:text-5xl">
+            <h2 className="mt-2 mb-6 text-center text-3xl font-bold leading-tight text-black sm:text-4xl md:mt-4 md:mb-8 md:text-5xl">
               TENTANG KAMI
             </h2>
             <p className="mt-4 mb-8 text-justify text-sm leading-7 text-gray-700 sm:text-base sm:leading-7 md:mb-12">
