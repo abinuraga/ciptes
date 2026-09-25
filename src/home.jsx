@@ -61,7 +61,7 @@ function Homepage() {
             <h2 className="mt-2 mb-6 text-center text-3xl font-bold leading-tight text-blac sm:text-4xl md:mt-4 md:mb-8 md:text-5xl">
               TENTANG KAMI
             </h2>
-            <p classname="mt-4 mb-8 text-justify text-sm leading-7 text-gray-700 sm:text-base sm:leading-7 md:mb-12">
+            <p className="mt-4 mb-8 text-justify text-sm leading-7 text-gray-700 sm:text-base sm:leading-7 md:mb-12">
               <strong>PT.CONSULINDO INTI PRIMA</strong> adalah perusahaan konsultan perencana bangunan gedung, berdiri sejak tanggal 9 september tahun 2020 di Kota Cilegon Banten. 
             Awal mula kegiatan PT. Consulindo Inti Prima meliputi perencanaan bangunan gedung Hunian, Komersial dan Industri yang mencakup Arsitektur, Struktur, MEP dan Fire Protection System. 
             Seiring perkembangan usaha dan kegiatan saat ini PT. Consulindo Inti Prima menambah kegiatan usahanya dalam bidang Konsultan Pengkaji Teknis dalam hal pemenuhan perizinan dasar yang meliputi 
@@ -354,7 +354,7 @@ function Homepage() {
               <div className="w-full max-w-4xl overflow-hidden rounded-2xl">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1179.6021226789162!2d106.08081824628931!3d-6.036828820724524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e418dcc5569a9d9%3A0xcf1198ac5d3f37b8!2sPT.%20CONSULINDO%20INTI%20PRIMA!5e0!3m2!1sid!2sid!4v1788245032187!5m2!1sid!2sid"
               className="h-[300px] w-full border-0 sm:h-[350px] md:h-[400px]"
-              allowfullscreen
+              allowFullscreen
               loading="lazy"
               referrerPolicy="strict-origin-when-cross-origin"
               title="PT. CONSULINDO INTI PRIMA"/>
