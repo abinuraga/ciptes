@@ -28,7 +28,7 @@ function Navbar () {
                 aria-label="Toggle menu">{isOpen ? <FaTimes /> : <FaBars />} </button>
 
                 {/* navigation */}
-                <nav>
+                <nav className="hidden md:block">
                     <ul className="flex w-full gap-2 text-[9px] items-center sm:gap-3 sm-text-[11px] md:text-base md:gap-8 font-medium text-gray-700">
 
                         <li className="shrink-0">
