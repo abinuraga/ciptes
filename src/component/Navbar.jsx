@@ -63,7 +63,7 @@ function Navbar () {
 
                         <li className="shrink-0">
                             <Link to="/credential" className="whitespace-nowrap transition hover:text-blue-600">
-                            Legalitas
+                            Kompetensi
                             </Link>
                         </li>
 
