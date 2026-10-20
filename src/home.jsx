@@ -35,7 +35,7 @@ function Homepage() {
         {/* overlay */}
         <div className="absolute inset-0 z-0 bg-blue-950/65"></div>
         
-        <h1 className="relative z-10 max-w-3xl text-left text-5xl font-bold text-green-500 sm:text-4xl md:text-4xl">
+        <h1 className="relative z-10 max-w-3xl font-serif leading-11 text-left text-5xl font-bold text-green-300 sm:text-4xl md:text-4xl">
           Konsultan Perencanaan Bangunan Industri : Desain Terintegrasi & Pengurusan Izin Tuntas dalam Satu Atap.
         </h1> 
         
@@ -136,7 +136,7 @@ function Homepage() {
         className="w-full bg-gray-100 px-4 py-16 sm:px-6 sm:py-20 md:py-24"
       >
         <div  className="mx-auto w-full max-w-7xl text-center" data-aos="fade-up" data-aos-delay="100">
-          <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl md:text-5xl">
+          <h2 className="text-3xl font-bold text-gray-900 sm:text-3xl md:text-4xl">
             VISI
           </h2>
           <div className="mx-auto mt-4 h-1 w-16 rounded bg-sky-500 sm:w-20"></div>
@@ -150,7 +150,7 @@ function Homepage() {
         className="w-full bg-white px-4 py-10 sm:px-6 sm:py-12 md:py-16"
       >
         <div  className="mx-auto w-full max-w-7xl text-center" data-aos="fade-up" data-aos-delay="200">
-          <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl md:text-5xl">
+          <h2 className="text-3xl font-bold text-gray-900 sm:text-3xl md:text-4xl">
             MISI
           </h2>
           <div className="mx-auto mt-4 h-1 w-20 rounded bg-blue-500"></div>
@@ -214,7 +214,7 @@ function Homepage() {
         className="w-full bg-white px-4 py-16 sm:px-6 sm:py-20 md:py-24"
       >
         <div  className="mx-auto w-full max-w-7xl text-center" data-aos="fade-up" data-aos-delay="200">
-          <h2 className="mb-6 text-3xl font-bold sm:text-4xl md:text-5xl">
+          <h2 className="mb-6 text-3xl font-bold sm:text-3xl md:text-4xl">
             KONTAK
           </h2>
           <div className="mx-auto mt-5 h-1 w-16 rounded bg-sky-500 sm:w-20"></div>
