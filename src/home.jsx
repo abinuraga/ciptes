@@ -3,7 +3,7 @@ import AOS from "aos";
 import 'aos/dist/aos';
 import bgImage from "./img/bg-8.webp"
 import bgImage2 from "./img/bg-7.jpg"
-import {FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaGavel, FaArrowRight} from "react-icons/fa";
+import {FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaGavel,} from "react-icons/fa";
 import {LuUsersRound, LuChartColumnIncreasing, LuClock } from "react-icons/lu";
 import Navbar from "./component/Navbar";
 import Logocaraousel from "./component/caraousel";
@@ -28,16 +28,20 @@ function Homepage() {
       {/* Hero */}
       <section
         id="hero"
-        className="relative flex min-h-screen w-full flex-col items-center justify-center overflow-hidden bg-White-100 pt-24"
+        className="relative flex min-h-screen w-full flex-col items-start px-8  justify-center overflow-hidden bg-White-100 pt-24"
       >
         <img src={bgImage2} alt="background-effect" className="absolute inset-0 z-0 h-full w-full object-cover"/>
 
         {/* overlay */}
         <div className="absolute inset-0 z-0 bg-blue-950/65"></div>
         
-        <h1 className="relative z-10 max-w-5xl text-center text-3xl font-bold text-green-400 sm:text-4xl md:text-5xl">
-          WELCOME TO PT. CONSULINDO INTI PRIMA
-        </h1>
+        <h1 className="relative z-10 max-w-3xl text-left text-5xl font-bold text-green-500 sm:text-4xl md:text-4xl">
+          Konsultan Perencanaan Bangunan Industri : Desain Terintegrasi & Pengurusan Izin Tuntas dalam Satu Atap.
+        </h1> 
+        
+        <p className="relative z-10 mt-10 text-left text-lg font-semibold text-green-400">Kami memadukan keahlian Arsitektur, Struktur, MEP, dan Pengurus
+          permit untuk membangun fasilitas industri yang efisien, aman, dan patuh regulasi.
+        </p>
         
         <HashLink smooth to="/#contact" className="relative z-10 mt-8 inline-flex items-center justify-center rounded-full 
         bg-orange-600 px-8 py-3 text-[20px] font-medium tracking-wide 
@@ -51,7 +55,7 @@ function Homepage() {
       {/* About */}
       <section
         id="about"
-        className="relative w-full overflow-hidden bg-blue-100 bg-center bg-local py-12 sm:py-16 md:py-24 md:bg-fixed"
+        className="relative w-full overflow-hidden bg-white bg-center bg-local py-12 sm:py-16 md:py-24 md:bg-fixed"
         >
 
         <div className="mx-auto grid w-full max-w-7xl grid-cols-1 gap-8 rounded-lg bg-white px-4 py-10 pt-12 sm:px-6 sm:py-12 md:grid-cols-[45%_50%] md:gap-12 md:px-8 md:pt-24" data-aos="fade-down" data-aos-delay="200">
@@ -129,21 +133,21 @@ function Homepage() {
       {/* Vision */}
       <section
         id="vision"
-        className="w-full bg-blue-100 px-4 py-16 sm:px-6 sm:py-20 md:py-24"
+        className="w-full bg-gray-100 px-4 py-16 sm:px-6 sm:py-20 md:py-24"
       >
         <div  className="mx-auto w-full max-w-7xl text-center" data-aos="fade-up" data-aos-delay="100">
           <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl md:text-5xl">
             VISI
           </h2>
           <div className="mx-auto mt-4 h-1 w-16 rounded bg-sky-500 sm:w-20"></div>
-          <p className="mx-auto mt-6 max-w-5xl text-base leading-7 text-gray-600 sm:text-lg sm:leading-8 md:text-2xl">Menjadi perusahaan yang terdepan, kompeten , terpercaya, dan memiliki integritas 
+          <p className="mx-auto mt-6 max-w-5xl text-base leading-7 text-gray-600 sm:text-lg sm:leading-8 md:text-lg">Menjadi perusahaan yang terdepan, kompeten , terpercaya, dan memiliki integritas 
             yang tinggi di seluruh wilayah Indonesia dalam bidang perencanaan bangunan Gedung secara Holistik.</p>
         </div>
       </section>
 
       <section
         id="vision"
-        className="w-full bg-blue-100 px-4 py-10 sm:px-6 sm:py-12 md:py-16"
+        className="w-full bg-white px-4 py-10 sm:px-6 sm:py-12 md:py-16"
       >
         <div  className="mx-auto w-full max-w-7xl text-center" data-aos="fade-up" data-aos-delay="200">
           <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl md:text-5xl">
@@ -160,11 +164,11 @@ function Homepage() {
 
       <section
       id="misi">
-        <div className="mx-auto max-w-8xl px-5 bg-blue-100">
+        <div className="mx-auto max-w-8xl px-5 bg-white">
 
           <div className="grid w-full grid-cols-1 gap-6 px-4 sm:px-6 md:grid-cols-2 md:gap-8 lg:grid-cols-4 lg:px-8">
 
-            <div className="w-full rounded-xl bg-white p-5 shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-xl sm:p-6" 
+            <div className="w-full rounded-xl bg-gray-200 p-5 shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-xl sm:p-6" 
             data-aos="fade-down" data-aos-delay="100">
               <LuUsersRound className="mt-2 mx-auto max-w-6xl text-2xl text-blue-500"/>
               <h4 className="mb-6 text-5xl text-center font-bold text-sky-600"></h4>
@@ -172,7 +176,7 @@ function Homepage() {
             
             </div>
 
-            <div className="w-full rounded-xl bg-white p-5 shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-xl sm:p-6" 
+            <div className="w-full rounded-xl bg-gray-200 p-5 shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-xl sm:p-6" 
             data-aos="fade-down" data-aos-delay="200">
               <LuChartColumnIncreasing className="mx-auto mt-2 text-3xl text-blue-500"/>
               <h4 className="mb-6 text-5xl text-center font-bold text-sky-600"></h4>
@@ -180,7 +184,7 @@ function Homepage() {
             
           </div>
 
-          <div className="w-full rounded-xl bg-white p-5 shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-xl sm:p-6" 
+          <div className="w-full rounded-xl bg-gray-200 p-5 shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-xl sm:p-6" 
           data-aos="fade-down" data-aos-delay="250">
               <FaGavel className="mx-auto mt-2 text-3xl text-blue-500"/>
               <h4 className="mb-6 text-5xl text-center font-bold text-sky-600"></h4>
@@ -188,7 +192,7 @@ function Homepage() {
             
           </div>
 
-          <div className="w-full rounded-xl bg-white p-5 shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-xl sm:p-6" 
+          <div className="w-full rounded-xl bg-gray-200 p-5 shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-xl sm:p-6" 
           data-aos="fade-down" data-aos-delay="300">
               <LuClock className="mx-auto mt-2 text-3xl text-blue-500"/>
               <h4 className="mb-6 text-5xl text-center font-bold text-sky-600"></h4>
@@ -201,102 +205,17 @@ function Homepage() {
       </section>
 
       
-
-      {/*services */}
-      <section id="services" className="w-full bg-blue-100 py-16 sm:py-20 md:py-24">
-
-        <div  className="mx-auto w-full max-w-7xl px-4 text-center sm:px-6" data-aos="fade-up" data-aos-delay="100">
-          <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl md:text-5xl">
-            SERVICES
-          </h2>
-          <div className="mx-auto mt-4 h-1 w-16 rounded bg-sky-500 sm:w-20"></div>
-          <p className="mt-6 text-base text-gray-600 sm:mt-8 sm:text-lg md:text-2xl">Bentuk pelayanan konsultasi kami</p>
-        </div>
-
-        <div className="mx-auto mt-10 w-full max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 md:px-8" data-aos="fade-up" data-aos-delay="100">
-        
-
-        <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-2 md:gap-8">
-          
-
-          {/* card 1 */}
-          <div className="group relative w-full rounded-xl border-l-4 border-orange-600 bg-green-300 px-5 py-6 shadow-sm 
-          transition-all duration-300 hover:-translate-y-1 hover:shadow-lg sm:border-l-7 sm:px-6" data-aos="slide-left" data-aos-delay="200">
-
-            <span className="mb-5 block text-center text-xl font-serif font-semibold leading-snug text-black sm:mb-8 sm:text-2xl">Arsitektur & Desain Bangunan</span>
-            
-            <p className="text-center text-sm leading-6 text-gray-700 sm:text-[15px]">
-              Konsultan Perencanaan Bangunan Gedung. Perencanaan dengan cakupan yang luas
-              dan inklusif. Setiap desain diproses berdasarkan kepatuhan terhadap regulasi yang berlaku.
-            </p>
-
-          </div>
-
-          {/* card 2 */}
-          <div className="group relative w-full rounded-xl border-l-4 border-orange-600 bg-green-300 px-5 py-6 shadow-sm 
-          transition-all duration-300 hover:-translate-y-1 hover:shadow-lg sm:border-l-7 sm:px-6" data-aos="slide-left" data-aos-delay="200">
-
-            <span className="mb-5 block text-center text-xl font-serif font-semibold leading-snug text-black sm:mb-8 sm:text-2xl">Konsultan Perizinan Bangunan</span>
-            
-            <p className="text-center text-sm leading-6 text-gray-700 sm:text-[15px]">
-              Konsultan Pengkaji Teknis untuk Persetujuan Bangunan Gedung
-              (PBG), dan Kelaikan Fungsi Bangunan (SLF).
-            </p>
-
-          </div>
-
-          {/* card 3 */}
-          <div className="group relative w-full rounded-xl border-l-4 border-orange-600 bg-green-300 px-5 py-6 shadow-sm 
-          transition-all duration-300 hover:-translate-y-1 hover:shadow-lg sm:border-l-7 sm:px-6" data-aos="slide-left" data-aos-delay="200">
-
-            <span className="mb-5 block text-center text-xl font-serif font-semibold leading-snug text-black sm:mb-8 sm:text-2xl">Konsultan Perizinan Lingkungan</span>
-            
-            <p className="text-center text-sm leading-6 text-gray-700 sm:text-[15px]">
-              Konsultan Pengkaji Teknis untuk Pemanfaatan Ruang PKKPR,
-              Lingkungan (AMDAL & UKL/UPL), penerbitan Persetujuan
-              Teknis Emisi dan Baku Mutu Air Limbah, Rincian Teknis
-              Penyimpanan Limbah B3, serta AMDAL (DELH).
-            </p>
-    
-          </div>
-
-          {/* card 4 */}
-          <div className="group relative w-full rounded-xl border-l-4 border-orange-600 bg-green-300 px-5 py-6 shadow-sm 
-          transition-all duration-300 hover:-translate-y-1 hover:shadow-lg sm:border-l-7 sm:px-6" data-aos="fade-down" data-aos-delay="200">
-
-            <span className="mb-5 block text-center text-xl font-serif font-semibold leading-snug text-black sm:mb-8 sm:text-2xl">Bangunan Gedung Hijau</span>
-            
-            <p className="text-center text-sm leading-6 text-gray-700 sm:text-[15px]">
-              Konsultan Perencanaan Bangunan Gedung. Perencanaan dengan cakupan yang luas
-              dan inklusif. Setiap desain diproses berdasarkan kepatuhan terhadap regulasi yang berlaku.
-            </p> 
-
-          </div>
-          
-
-        </div>
-
-        <div className="mt-8 flex justify-center sm:mt-10">
-          <HashLink to="/project" className="inline-flex items-center justify-center rounded-full 
-          bg-orange-600 px-6 py-3 text-base font-medium tracking-wide text-white transition-all duration-500 
-          hover:-translate-y-1 hover:bg-sky-500 hover:shadow-lg sm:px-8 sm:text-lg md:text-[20px]" 
-          data-aos="fade-up" data-aos-delay="300">
-            Learn more <FaArrowRight className="ml-2 text-lg text-blue-700 sm:text-xl md:text-2xl"/></HashLink>
-        </div>
-
-      </div>
-      </section>
       
       
 
       {/* Contact */}
       <section
         id="contact"
-        className="w-full bg-blue-100 px-4 py-16 sm:px-6 sm:py-20 md:py-24"
+        className="w-full bg-white px-4 py-16 sm:px-6 sm:py-20 md:py-24"
       >
         <div  className="mx-auto w-full max-w-7xl text-center" data-aos="fade-up" data-aos-delay="200">
           <h2 className="mb-6 text-3xl font-bold sm:text-4xl md:text-5xl">
-            CONTACT
+            KONTAK
           </h2>
           <div className="mx-auto mt-5 h-1 w-16 rounded bg-sky-500 sm:w-20"></div>
           <p className="mt-6 text-base leading-7 text-gray-600 sm:text-lg md:text-2xl">Hubungi kantor pusat kami melalui data dibawah.</p>

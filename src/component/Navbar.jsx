@@ -33,31 +33,13 @@ function Navbar () {
 
                         <li className="shrink-0">
                             <HashLink smooth to="/#hero" className="whitespace-nowrap transition hover:text-blue-600">
-                            Home
-                            </HashLink>
-                        </li>
-
-                        <li className="shrink-0">
-                            <HashLink smooth to="/#about" className="whitespace-nowrap transition hover:text-blue-600">
-                            Tentang Kami
-                            </HashLink>
-                        </li>
-                        
-                        <li className="shrink-0">
-                            <HashLink smooth to="/#vision" className="whitespace-nowrap transition hover:text-blue-600">
-                            Visi & Misi
-                            </HashLink>
-                        </li>
-
-                        <li className="shrink-0">
-                            <HashLink smooth to="/#services" className="whitespace-nowrap transition hover:text-blue-600">
-                            Layanan Kami
+                            Beranda
                             </HashLink>
                         </li>
 
                         <li className="shrink-0">
                             <HashLink smooth to="/#contact" className="whitespace-nowrap transition hover:text-blue-600">
-                            Contact
+                            Kontak
                             </HashLink>
                         </li>
 
@@ -69,7 +51,7 @@ function Navbar () {
 
                         <li className="shrink-0">
                             <Link to="/project" className="whitespace-nowrap transition hover:text-blue-600">
-                            Experience 
+                            Layanan 
                             </Link>
                         </li>
 

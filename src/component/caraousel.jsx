@@ -39,7 +39,7 @@ const logos = [
 
 function Logocaraousel() {
     return (
-        <section className="overflow-hidden bg-blue-100 py-10">
+        <section className="overflow-hidden bg-gray-100 py-10">
             <div className="flex w-max animate-marquee">
 
                 {/* set 1 */}

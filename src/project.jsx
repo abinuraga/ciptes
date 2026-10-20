@@ -142,7 +142,7 @@ const categories = [
 {/* project card */}
 function ProjectCard({project}) {
   return (
-    <div className="group overflow-hidden rounded-xl bg-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+    <div className="group overflow-hidden rounded-xl bg-gray-200 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
       data-aos="fade-up">
 
         {/* Gambar */}
@@ -206,7 +206,7 @@ function Project() {
         <Navbar/>
 
         <section>
-        <section id="Project" className="py-20 bg-blue-100">
+        <section id="Project" className="py-20 bg-white">
         <div  className="mx-auto max-w-7xl px-6 text-center" data-aos="fade-up">
           <h2 className="mt-14 text-5xl font-bold text-gray-900">
             PENGALAMAN PROJEK
@@ -215,7 +215,7 @@ function Project() {
           <p className="mt-6 textlg text-gray-600"></p>
         </div>
 
-        <div className="mt-4 bg-blue-100" data-aos="fade-up">
+        <div className="mt-4 bg-white" data-aos="fade-up">
 
           <div className="mx-auto flex max-w-7xl justify-center gap-2 overflow-x-auto px-6 py-5">
             {categories.map((category)=>(
