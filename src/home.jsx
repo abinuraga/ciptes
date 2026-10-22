@@ -28,18 +28,18 @@ function Homepage() {
       {/* Hero */}
       <section
         id="hero"
-        className="relative flex min-h-screen w-full flex-col items-start px-8  justify-center overflow-hidden bg-White-100 pt-24"
+        className="relative flex min-h-screen w-full flex-col items-center px-8  justify-center overflow-hidden bg-White-100 pt-24"
       >
         <img src={bgImage2} alt="background-effect" className="absolute inset-0 z-0 h-full w-full object-cover"/>
 
         {/* overlay */}
         <div className="absolute inset-0 z-0 bg-blue-950/65"></div>
         
-        <h1 className="relative z-10 max-w-3xl font-serif leading-11 text-left text-5xl font-bold text-green-300 sm:text-4xl md:text-4xl">
+        <h1 className="relative z-10 max-w-3xl leading-11 text-center text-5xl font-bold text-green-300 sm:text-4xl md:text-4xl">
           Konsultan Perencanaan Bangunan Industri : Desain Terintegrasi & Pengurusan Izin Tuntas dalam Satu Atap.
         </h1> 
         
-        <p className="relative z-10 mt-10 text-left text-lg font-semibold text-green-400">Kami memadukan keahlian Arsitektur, Struktur, MEP, dan Pengurus
+        <p className="relative z-10 mt-10 mr-3 ml-3 leading-8 text-center text-lg font-semibold text-green-400">Kami memadukan keahlian Arsitektur, Struktur, MEP, dan Pengurus
           permit untuk membangun fasilitas industri yang efisien, aman, dan patuh regulasi.
         </p>
         
@@ -218,7 +218,7 @@ function Homepage() {
             KONTAK
           </h2>
           <div className="mx-auto mt-5 h-1 w-16 rounded bg-sky-500 sm:w-20"></div>
-          <p className="mt-6 text-base leading-7 text-gray-600 sm:text-lg md:text-2xl">Hubungi kantor pusat kami melalui data dibawah.</p>
+          <p className="mt-6 text-base leading-7 text-gray-600 sm:text-lg md:text-lg">Hubungi kantor pusat kami melalui data dibawah.</p>
         </div>
       </section>
 
@@ -296,7 +296,7 @@ function Homepage() {
 
             <div className="grid w-full gap-8 md:gap-10 lg:grid-cols-3">
 
-              <div data-aos="fade-up" data-aos-delay="100">
+              <div>
                 <h2 className="text-xl font-bold leading-snug sm:text-2xl">PT.CONSULINDO INTI PRIMA
 
                 </h2>

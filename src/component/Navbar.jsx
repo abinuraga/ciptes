@@ -15,7 +15,7 @@ function Navbar () {
     setServiceOpen(false);
   };
     return (
-        <header className="fixed top-0 left-0 z-50 w-full bg-white/30 shadow-md">
+        <header className="fixed top-0 left-0 z-50 w-full bg-white/30 backdrop-blur-md shadow-md">
 
             <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
                 {/* logo */}
@@ -75,13 +75,13 @@ function Navbar () {
               </button>
 
               {serviceOpen && (
-                <ul className="absolute right-0 top-full z-50 min-w-56 rounded-lg border border-white/30 bg-white/10 py-2 shadow-lg">
+                <ul className="absolute right-0 top-full z-50 min-w-56 rounded-lg backdrop-blur-md border border-white/10 bg-white/10 py-2 shadow-lg">
 
                   <li>
                     <Link
                       to="/project"
                       onClick={closeMenu}
-                      className="block px-5 py-3 hover:bg-blue-50 hover:text-blue-700"
+                      className="block px-5 py-3 text-green-500 hover:bg-blue-50 hover:text-blue-700"
                     >
                       Semua Proyek
                     </Link>
@@ -91,7 +91,7 @@ function Navbar () {
                     <Link
                       to="/project#perencanaan"
                       onClick={closeMenu}
-                      className="block px-5 py-3 hover:bg-blue-50 hover:text-blue-700"
+                      className="block px-5 py-3 text-green-500 hover:bg-blue-50 hover:text-blue-700"
                     >
                       Perencanaan Bangunan
                     </Link>
@@ -101,7 +101,7 @@ function Navbar () {
                     <Link
                       to="/project#perizinan"
                       onClick={closeMenu}
-                      className="block px-5 py-3 hover:bg-blue-50 hover:text-blue-700"
+                      className="block px-5 py-3 text-green-500 hover:bg-blue-50 hover:text-blue-700"
                     >
                       Pengurusan Perizinan
                     </Link>
@@ -164,7 +164,7 @@ function Navbar () {
                     <Link
                       to="/project"
                       onClick={closeMenu}
-                      className="block py-3 text-gray-600 hover:text-blue-600"
+                      className="block py-3 text-green-500 hover:text-blue-600"
                     >
                       Semua Proyek
                     </Link>
@@ -174,7 +174,7 @@ function Navbar () {
                     <Link
                       to="/project#perencanaan"
                       onClick={closeMenu}
-                      className="block py-3 text-gray-600 hover:text-blue-600"
+                      className="block py-3 text-green-500 hover:text-blue-600"
                     >
                       Perencanaan Bangunan
                     </Link>
@@ -184,7 +184,7 @@ function Navbar () {
                     <Link
                       to="/project#perizinan"
                       onClick={closeMenu}
-                      className="block py-3 text-gray-600 hover:text-blue-600"
+                      className="block py-3 text-green-500 hover:text-blue-600"
                     >
                       Pengurusan Perizinan
                     </Link>
