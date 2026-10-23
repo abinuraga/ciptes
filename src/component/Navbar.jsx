@@ -54,6 +54,12 @@ function Navbar () {
                             </Link>
                         </li>
 
+                        <li className="shrink-0">
+                            <Link to="/layanan" className="whitespace-nowrap transition hover:text-blue-300">
+                            Layanan 
+                            </Link>
+                        </li>
+
                        {/* Dropdown Layanan Desktop */}
             <li
               className="relative"
@@ -66,7 +72,7 @@ function Navbar () {
                 aria-expanded={serviceOpen}
                 className="flex items-center gap-2 whitespace-nowrap py-2 transition hover:text-blue-600"
               >
-                Layanan
+                Proyek
                 <FaChevronDown
                   className={`text-xs transition-transform duration-200 ${
                     serviceOpen ? "rotate-180" : ""
@@ -149,7 +155,7 @@ function Navbar () {
                 aria-expanded={serviceOpen}
                 className="flex w-full items-center justify-between py-3 text-left hover:text-blue-600"
               >
-                Layanan
+                Proyek
                 <FaChevronDown
                   className={`text-xs transition-transform duration-200 ${
                     serviceOpen ? "rotate-180" : ""

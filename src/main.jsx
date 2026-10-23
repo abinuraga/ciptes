@@ -6,6 +6,7 @@ import Project from './project.jsx'
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 import './index.css'
+import Layanan from './layanan.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -14,6 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path="/" element={<Homepage />} />
       <Route path="/credential" element={<Imgpage />} />
       <Route path= "/project" element={<Project />} />
+      <Route path="/layanan" element={<Layanan />} />
     </Routes>
   </BrowserRouter>
 
