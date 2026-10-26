@@ -35,11 +35,11 @@ function Homepage() {
         {/* overlay */}
         <div className="absolute inset-0 z-0 bg-blue-950/65"></div>
         
-        <h1 className="relative z-10 max-w-3xl leading-11 text-center text-5xl font-bold text-green-300 sm:text-4xl md:text-4xl">
+        <h1 className="relative z-10 max-w-auto leading-11 text-center text-5xl font-bold text-green-300 sm:text-4xl md:text-4xl">
           Konsultan Perencanaan Bangunan Industri : Desain Terintegrasi & Pengurusan Izin Tuntas dalam Satu Atap.
         </h1> 
         
-        <p className="relative z-10 mt-10 mr-3 ml-3 leading-8 text-center text-lg font-semibold text-green-400">Kami memadukan keahlian Arsitektur, Struktur, MEP, dan Pengurus
+        <p className="relative z-10 mt-10 mr-3 ml-3 max-w-3xl leading-8 text-center text-lg font-semibold text-green-400">Kami memadukan keahlian Arsitektur, Struktur, MEP, dan Pengurus
           permit untuk membangun fasilitas industri yang efisien, aman, dan patuh regulasi.
         </p>
         
