@@ -6,6 +6,9 @@ import Navbar from "./component/Navbar";
 import { HashLink } from "react-router-hash-link";
 
 import bg1 from "./img/mekanik.jpg";
+import bg2 from "./img/perencanaan.jpg";
+import bg3 from "./img/konstruk.jpg";
+import bg4 from "./img/lingkungan.png";
 
 function Layanan() {
 
@@ -55,7 +58,7 @@ function Layanan() {
               <div className="flex flex-col justify-center px-7 py-12 sm:px-12 lg:px-16 xl:px-20" data-aos="fade-down"
               data-aos-delay="100">
 
-                <p clasName="mb-8 text-xs tracking-[0.2em] text-slate-6000">
+                <p clasName="mb-8 text-xs tracking-[0.2em] text-slate-600">
                   01 / LAYANAN KAMI
                 </p>
 
@@ -76,7 +79,7 @@ function Layanan() {
               {/*kolom kanan, gambar */}
               <div className="relative min-h-[300px] overflow-hidden sm:min-h-[400px] lg:min-h-[600px]">
                 <img 
-                src={bg1}
+                src={bg2}
                 alt="pelayanan konsultan 1"
                 className="absolute inset-0 h-full object-cover object-center"/>
 
@@ -93,7 +96,7 @@ function Layanan() {
               <div className="relative order-2 min-h-[300px] overflow-hidden sm:min-h-[400px] lg:order-1 lg:min-h-[550px]">
 
                 <img
-                src={bg1}
+                src={bg3}
                 alt="desain arsitektur 2"
                 className="absolute inset-0 h-full w-full object-cover"/>
                 
@@ -123,51 +126,83 @@ function Layanan() {
             
             </div>
 
-          <div className="mx-auto grid max-w-7xl lg:grid-cols-2 overflow-hidden grid-cols-1 gap-6 px-4 sm:px-6 md:grid-cols-2 md:gap-8 lg:grid-cols-4 lg:px-8">
+            {/*layanan 3 text kiri, gambar kanan*/}
+            <div className="grid grid-cols-1 overflow-hidden bg-white lg:grid-cols-2">
 
-            <div className="w-full rounded-xl bg-gray-200 p-5 shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-xl sm:p-6" 
-            data-aos="fade-down" data-aos-delay="100">
-              
-              <h2 className="mb-6 text-5xl text-center font-bold text-sky-600"> perencaan</h2>
-              <p className="text-center text-sm leading-6 text-gray-700 sm:text-base">  kami membantu mewujudkan perencanaan bangunan yang fungsional, estetis, 
-                dan sesuai dengan kebutuhan klien. Kami berkomitmen memberikan solusi yang efektif dalam setiap tahap perencanaan desain maupun pengurusan perizinan, 
-                dengan memperhatikan ketentuan dan regulasi yang berlaku.</p>
+              <div className="flex flex-col justify-center px-7 py-12 sm:px-12 lg:px-16 xl:px-20" data-aos="fade-down"
+              data-aos-delay="100">
+
+                <p clasName="mb-8 text-xs tracking-[0.2em] text-slate-600">
+                  03 / LAYANAN KAMI
+                </p>
+
+                 <h2 className="max-w-xl text-4xl font-normal leading-tight tracking-tight text-neutral-900 sm:text-5xl lg:text-6xl">
+                    Penyusunan dokumen AMDAL.
+                  </h2>
+
+                  <div className="mt-10 max-w-md self-end">
+
+                    <p className="text-sm leading-7 text-slate-600 sm:text-base">
+                      menyediakan layanan konsultasi lingkungan dan penyusunan dokumen Analisis Mengenai Dampak Lingkungan (AMDAL) 
+                      untuk membantu mengidentifikasi, mengevaluasi, serta mengelola potensi dampak yang ditimbulkan 
+                      dari suatu rencana usaha atau kegiatan terhadap lingkungan hidup.
+                    </p>
+                  </div>
+              </div>
+
+              {/*kolom kanan, gambar */}
+              <div className="relative min-h-[300px] overflow-hidden sm:min-h-[400px] lg:min-h-[600px]">
+                <img 
+                src={bg4}
+                alt="pelayanan konsultan 1"
+                className="absolute inset-0 h-full object-cover object-center"/>
+
+                <div className="absolute inset-0 bg-black/5"></div>
+
+                <p className="absolute bottom-6 left-6 text-[10px] font-medium tracking-wider text-white
+                drop-shadow-md sm:left-10">PERENCANAAN AMDAL</p>
+              </div>
+            </div>
+
+            {/*layanan 4 gambar kiri, text kanan*/}
+          <div className="grid grid-cols-1 overflow-hidden bg-white lg:grid-cols-2">
+              <div className="relative order-2 min-h-[300px] overflow-hidden sm:min-h-[400px] lg:order-1 lg:min-h-[550px]">
+
+                <img
+                src={bg1}
+                alt="desain arsitektur 2"
+                className="absolute inset-0 h-full w-full object-cover"/>
+                
+                <p className="absolute bottom-6 left-6 text-xs tracking-wider text-white drop-shadow-md sm:left-10">
+                  PERIZINAN LINGKUNGAN
+                </p>
+            </div>
+
+            <div className="order-1 flex flex-col justify-center px-7 py-12 sm:px-12 lg:order-2 lg:px-16 xl:px-20"
+            data-aos="fade left" data-aos-delay="200">
+
+              <p className="mb-8 text-xs tracking-[0.2em] text-slate-600">04 / PERIZINAN LINGKUNGAN</p>
+
+              <h2 className="max-w-xl text-4xl font-normal leading-tight tracking-tight text-neutral-900 sm:text-5xl lg:text-6xl">
+                 PERIZINAN LINGKUNGAN
+              </h2>
+
+            <div className="mt-10 max-w-md self-end">
+
+              <p clasName="text-sm leading-7 text-gray-700 sm:text-base">
+                menyediakan layanan konsultasi dan pengurusan perizinan lingkungan untuk membantu perusahaan maupun pelaku usaha 
+                dalam memenuhi persyaratan lingkungan sesuai dengan jenis, skala, dan karakteristik kegiatan yang dijalankan.
+              </p>
+            </div>
+            </div>
             
             </div>
 
-            <div className="w-full rounded-xl bg-gray-200 p-5 shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-xl sm:p-6" 
-            data-aos="fade-down" data-aos-delay="200">
-              
-              <h4 className="mb-6 text-5xl text-center font-bold text-sky-600"></h4>
-              <p className="text-center text-sm leading-6 text-gray-700 sm:text-base"> menyediakan layanan konsultasi dan perencanaan bangunan gedung dengan cakupan yang luas, 
-                terintegrasi, dan inklusif, sesuai dengan kebutuhan serta karakteristik setiap proyek. Proses perencanaan dilakukan secara terstruktur 
-                dengan mempertimbangkan aspek fungsi bangunan, estetika, kenyamanan, keamanan, dan efisiensi pemanfaatan ruang. </p>
             
-          </div>
-
-          <div className="w-full rounded-xl bg-gray-200 p-5 shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-xl sm:p-6" 
-          data-aos="fade-down" data-aos-delay="250">
-              
-              <h4 className="mb-6 text-5xl text-center font-bold text-sky-600"></h4>
-              <p className="text-center text-sm leading-6 text-gray-700 sm:text-base"> menyediakan layanan konsultasi lingkungan dan penyusunan dokumen Analisis Mengenai Dampak Lingkungan (AMDAL) 
-                untuk membantu mengidentifikasi, mengevaluasi, serta mengelola potensi dampak yang ditimbulkan dari suatu rencana usaha atau kegiatan terhadap lingkungan hidup. </p>
-            
-          </div>
-
-          <div className="w-full rounded-xl bg-gray-200 p-5 shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-xl sm:p-6" 
-          data-aos="fade-down" data-aos-delay="300">
-              
-              <h4 className="mb-6 text-5xl text-center font-bold text-sky-600"></h4>
-              <p className="text-center text-sm leading-6 text-gray-700 sm:text-base"> menyediakan layanan konsultasi dan pengurusan perizinan lingkungan untuk membantu perusahaan maupun pelaku usaha 
-                dalam memenuhi persyaratan lingkungan sesuai dengan jenis, skala, dan karakteristik kegiatan yang dijalankan.</p>
-            
-          </div>
-          
-          </div>
           
         </div>
 
-        <HashLink smooth to="/project" className=" mt-8 mb-12 inline-flex flex flex-col items-center justify-center rounded-full 
+        <HashLink smooth to="/project" className=" mt-8 ml-30 mb-12 inline-flex flex flex-col items-center justify-center rounded-full 
         bg-orange-600 px-8 py-3 text-[20px] font-medium tracking-wide 
         text-white transition-all duration-500 hover:-translate-y-1 
         hover:bg-sky-500 hover:shadow-lg">Projek Lainnya</HashLink>
