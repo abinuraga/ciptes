@@ -95,11 +95,11 @@ function Navbar () {
 
                   <li>
                     <Link
-                      to="/project#perencanaan"
+                      to="/slf"
                       onClick={closeMenu}
                       className="block px-5 py-3 text-green-500 hover:bg-blue-50 hover:text-blue-700"
                     >
-                      Perencanaan Bangunan
+                      SLF
                     </Link>
                   </li>
 
@@ -109,7 +109,7 @@ function Navbar () {
                       onClick={closeMenu}
                       className="block px-5 py-3 text-green-500 hover:bg-blue-50 hover:text-blue-700"
                     >
-                      Pengurusan Perizinan
+                      PBG
                     </Link>
                   </li>
 

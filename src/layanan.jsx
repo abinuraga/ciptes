@@ -8,7 +8,7 @@ import { HashLink } from "react-router-hash-link";
 import bg1 from "./img/mekanik.jpg";
 import bg2 from "./img/perencanaan.jpg";
 import bg3 from "./img/konstruk.jpg";
-import bg4 from "./img/lingkungan.png";
+import bg4 from "./img/gedung_lingkungan.jpg";
 
 function Layanan() {
 
@@ -58,20 +58,20 @@ function Layanan() {
               <div className="flex flex-col justify-center px-7 py-12 sm:px-12 lg:px-16 xl:px-20" data-aos="fade-down"
               data-aos-delay="100">
 
-                <p clasName="mb-8 text-xs tracking-[0.2em] text-slate-600">
+                <p className="mb-8 text-xs tracking-[0.2em] text-slate-600">
                   01 / LAYANAN KAMI
                 </p>
 
                  <h2 className="max-w-xl text-4xl font-normal leading-tight tracking-tight text-neutral-900 sm:text-5xl lg:text-6xl">
-                    Perencanaan dengan tujuan.
+                    Konsultan Pengurusan Bangunan.
                   </h2>
 
                   <div className="mt-10 max-w-md self-end">
 
                     <p className="text-sm leading-7 text-slate-600 sm:text-base">
-                      kami membantu mewujudkan perencanaan bangunan yang fungsional, estetis, 
-                      dan sesuai dengan kebutuhan klien. Kami berkomitmen memberikan solusi yang efektif dalam setiap tahap perencanaan desain maupun pengurusan perizinan, 
-                      dengan memperhatikan ketentuan dan regulasi yang berlaku.
+                      Kami menyediakan layanan konsultasi dan pendampingan pengurusan Persetujuan Bangunan Gedung (PBG) 
+                      dan Sertifikat Laik Fungsi (SLF) untuk membantu pemilik bangunan maupun pelaku usaha dalam memenuhi persyaratan teknis
+                      dan administratif sesuai dengan ketentuan peraturan yang berlaku. 
                     </p>
                   </div>
               </div>
@@ -117,7 +117,7 @@ function Layanan() {
             <div className="mt-10 max-w-md self-end">
 
               <p clasName="text-sm leading-7 text-gray-700 sm:text-base">
-                menyediakan layanan konsultasi dan perencanaan bangunan gedung dengan cakupan yang luas, 
+                Menyediakan layanan konsultasi dan perencanaan bangunan gedung dengan cakupan yang luas, 
                 terintegrasi, dan inklusif, sesuai dengan kebutuhan serta karakteristik setiap proyek. Proses perencanaan dilakukan secara terstruktur 
                 dengan mempertimbangkan aspek fungsi bangunan, estetika, kenyamanan, keamanan, dan efisiensi pemanfaatan ruang.
               </p>
@@ -132,18 +132,18 @@ function Layanan() {
               <div className="flex flex-col justify-center px-7 py-12 sm:px-12 lg:px-16 xl:px-20" data-aos="fade-down"
               data-aos-delay="100">
 
-                <p clasName="mb-8 text-xs tracking-[0.2em] text-slate-600">
-                  03 / LAYANAN KAMI
+                <p className="mb-8 text-xs tracking-[0.2em] text-slate-600">
+                  03 / AMDAL
                 </p>
 
                  <h2 className="max-w-xl text-4xl font-normal leading-tight tracking-tight text-neutral-900 sm:text-5xl lg:text-6xl">
-                    Penyusunan dokumen AMDAL.
+                    Konsultasi Dampak Lingkungan.
                   </h2>
 
                   <div className="mt-10 max-w-md self-end">
 
                     <p className="text-sm leading-7 text-slate-600 sm:text-base">
-                      menyediakan layanan konsultasi lingkungan dan penyusunan dokumen Analisis Mengenai Dampak Lingkungan (AMDAL) 
+                      Menyediakan layanan konsultasi lingkungan dan penyusunan dokumen Analisis Mengenai Dampak Lingkungan (AMDAL) 
                       untuk membantu mengidentifikasi, mengevaluasi, serta mengelola potensi dampak yang ditimbulkan 
                       dari suatu rencana usaha atau kegiatan terhadap lingkungan hidup.
                     </p>
@@ -190,7 +190,7 @@ function Layanan() {
             <div className="mt-10 max-w-md self-end">
 
               <p clasName="text-sm leading-7 text-gray-700 sm:text-base">
-                menyediakan layanan konsultasi dan pengurusan perizinan lingkungan untuk membantu perusahaan maupun pelaku usaha 
+                Menyediakan layanan konsultasi dan pengurusan perizinan lingkungan untuk membantu perusahaan maupun pelaku usaha 
                 dalam memenuhi persyaratan lingkungan sesuai dengan jenis, skala, dan karakteristik kegiatan yang dijalankan.
               </p>
             </div>
