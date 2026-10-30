@@ -37,25 +37,25 @@ function Navbar () {
                     <ul className="flex w-full gap-2 text-[9px] items-center sm:gap-3 sm-text-[11px] md:text-base md:gap-8 font-medium text-gray-700">
 
                         <li className="shrink-0">
-                            <HashLink smooth to="/#hero" className="whitespace-nowrap transition hover:text-blue-300">
+                            <HashLink smooth to="/#hero" className="whitespace-nowrap text-gray-300 transition hover:text-blue-300">
                             Beranda
                             </HashLink>
                         </li>
 
                         <li className="shrink-0">
-                            <HashLink smooth to="/#contact" className="whitespace-nowrap transition hover:text-blue-300">
+                            <HashLink smooth to="/#contact" className="whitespace-nowrap text-gray-300 transition hover:text-blue-300">
                             Kontak
                             </HashLink>
                         </li>
 
                         <li className="shrink-0">
-                            <Link to="/credential" className="whitespace-nowrap transition hover:text-blue-300">
+                            <Link to="/credential" className="whitespace-nowrap transition text-gray-300 hover:text-blue-300">
                             Kompetensi
                             </Link>
                         </li>
 
                         <li className="shrink-0">
-                            <Link to="/layanan" className="whitespace-nowrap transition hover:text-blue-300">
+                            <Link to="/layanan" className="whitespace-nowrap transition text-gray-300 hover:text-blue-300">
                             Layanan 
                             </Link>
                         </li>
@@ -70,7 +70,7 @@ function Navbar () {
                 type="button"
                 onClick={() => setServiceOpen(!serviceOpen)}
                 aria-expanded={serviceOpen}
-                className="flex items-center gap-2 whitespace-nowrap py-2 transition hover:text-blue-600"
+                className="flex items-center gap-2 whitespace-nowrap py-2 text-gray-300 transition hover:text-blue-600"
               >
                 Proyek
                 <FaChevronDown
@@ -87,7 +87,7 @@ function Navbar () {
                     <Link
                       to="/project"
                       onClick={closeMenu}
-                      className="block px-5 py-3 text-green-500 hover:bg-blue-50 hover:text-blue-700"
+                      className="block px-5 py-3 text-green-500 hover:bg-blue-50  hover:text-blue-700"
                     >
                       Semua Proyek
                     </Link>

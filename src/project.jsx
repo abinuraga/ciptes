@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import AOS from "aos";
 import 'aos/dist/aos.css';
 import {FaMapMarkerAlt, FaPhoneAlt, FaEnvelope,} from "react-icons/fa";
+import { HashLink } from "react-router-hash-link";
 
 import slf1 from "./slf/pt-mayora1.jpg";
 import slf1_2 from "./slf/pt-mayora2.jpg";
@@ -25,6 +26,7 @@ import arc1 from "./img/untara.png";
 import arc1_2 from "./img/untara2.png";
 import arc2 from "./img/PT National Label.png";
 import arc2_2 from "./img/PT National Label3.png";
+import bg1 from "./img/gedung_lingkungan.jpg";
 import Navbar from "./component/Navbar";
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
@@ -180,14 +182,38 @@ function Project() {
         <Navbar/>
 
         <section>
-        <section id="Project" className="py-20 bg-white">
-        <div  className="mx-auto max-w-7xl px-6 text-center" data-aos="fade-up">
-          <h2 className="mt-14 text-5xl font-bold text-gray-900">
-            LAYANAN KAMI
-          </h2>
+        <section id="Project" className="relative flex min-h-[70vh] w-full flex-col items-center px-8  justify-center overflow-hidden bg-White-100 pt-24">
+          
+          <img src={bg1} alt="background-effect" className="absolute inset-0 z-0 h-full w-full object-cover"/>
+
+          {/* overlay */}
+        <div className="absolute inset-0 z-0 bg-blue-950/65"></div>
+
+        <h1 className="relative z-10 max-w-auto leading-11 text-center text-5xl font-bold text-green-300 sm:text-4xl md:text-4xl">
+          PORTOFOLIO PROJEK
+        </h1> 
+
           <div className="mx-auto mt-4 mb-14 h-1 w-20 rounded bg-sky-500"></div>
           <p className="mt-6 textlg text-gray-600"></p>
+
+       
+
+        
+      </section>
+
+      <section>
+         <section>
+          <div  className="mx-auto max-w-7xl px-6 text-center" data-aos="fade-up">
+          <h2 className="mt-14 text-5xl font-bold text-green-500">
+            
+          </h2>
+          <p className="mt-6 textlg text-gray-600">PT. Consulindo Inti Prima telah berpengalaman dalam mendampingi berbagai proyek konsultasi dan pengurusan 
+            perizinan bangunan gedung. Setiap proyek kami tangani dengan mengutamakan ketelitian, profesionalisme, serta kesesuaian terhadap standar 
+            teknis dan regulasi yang berlaku. Melalui komitmen, kolaborasi, dan proses kerja yang terarah, kami senantiasa berupaya menghadirkan solusi 
+            perizinan yang efektif, tepat, dan terpercaya. Setiap proyek yang kami kerjakan merupakan wujud dedikasi dalam memberikan pelayanan berkualitas 
+            serta membangun kepercayaan bersama klien.</p>
         </div>
+        </section>
 
         <div className="mt-4 bg-white" data-aos="fade-up">
 
@@ -208,6 +234,13 @@ function Project() {
           {filteredProjects.map((project)=> (
             <ProjectCard key={project.id} project={project}/>
           ))}
+        </div>
+
+        <div className="relative z-10 mt-8 flex justify-center">
+          <HashLink smooth to="/#contact" className="relative z-10 mt-12 mb-12 inline-flex items-center justify-center rounded-full 
+        bg-orange-600 px-8 py-3 text-[20px] font-medium tracking-wide 
+        text-white transition-all duration-500 hover:-translate-y-1 
+        hover:bg-sky-500 hover:shadow-lg">Konsultasi Sekarang</HashLink>
         </div>
       </section>
 

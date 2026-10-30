@@ -202,10 +202,16 @@ function Layanan() {
           
         </div>
 
-        <HashLink smooth to="/project" className=" mt-8 ml-30 mb-12 inline-flex flex flex-col items-center justify-center rounded-full 
+        <div className="relative z-10 mt-8 flex justify-center">
+
+          <HashLink smooth to="/project" className=" mt-8 ml-30 mb-12 inline-flex flex flex-col items-center justify-center rounded-full 
         bg-orange-600 px-8 py-3 text-[20px] font-medium tracking-wide 
         text-white transition-all duration-500 hover:-translate-y-1 
         hover:bg-sky-500 hover:shadow-lg">Projek Lainnya</HashLink>
+        
+        </div>
+
+        
 
        
       </section>
