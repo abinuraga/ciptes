@@ -207,7 +207,7 @@ function Project() {
           <h2 className="mt-14 text-5xl font-bold text-green-500">
             
           </h2>
-          <p className="mt-6 textlg text-gray-600">PT. Consulindo Inti Prima telah berpengalaman dalam mendampingi berbagai proyek konsultasi dan pengurusan 
+          <p className="mt-6 text-lg text-gray-600 sm:px-4 sm:text-lg sm:leading-8">PT. Consulindo Inti Prima telah berpengalaman dalam mendampingi berbagai proyek konsultasi dan pengurusan 
             perizinan bangunan gedung. Setiap proyek kami tangani dengan mengutamakan ketelitian, profesionalisme, serta kesesuaian terhadap standar 
             teknis dan regulasi yang berlaku. Melalui komitmen, kolaborasi, dan proses kerja yang terarah, kami senantiasa berupaya menghadirkan solusi 
             perizinan yang efektif, tepat, dan terpercaya. Setiap proyek yang kami kerjakan merupakan wujud dedikasi dalam memberikan pelayanan berkualitas 

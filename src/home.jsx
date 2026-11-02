@@ -19,6 +19,12 @@ function Homepage() {
       duration: 1000,
       once: true,
     });
+
+     // Otomatis scroll ke posisi paling atas
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   }, []);
 
     return (
@@ -35,11 +41,11 @@ function Homepage() {
         {/* overlay */}
         <div className="absolute inset-0 z-0 bg-blue-950/65"></div>
         
-        <h1 className="relative z-10 max-w-auto leading-11 text-center text-5xl font-bold text-green-300 sm:text-4xl md:text-4xl">
+        <h1 className="relative z-10 max-w-auto leading-11 text-center text-5xl font-bold text-green-300 sm:text-lg md:text-4xl">
           Konsultan Perencanaan Bangunan Industri : Desain Terintegrasi & Pengurusan Izin Tuntas dalam Satu Atap.
         </h1> 
         
-        <p className="relative z-10 mt-10 mr-3 ml-3 max-w-3xl leading-8 text-center text-lg font-semibold text-green-400">Kami memadukan keahlian Arsitektur, Struktur, MEP, dan Pengurus
+        <p className="relative z-10 mt-10 mr-3 ml-3 max-w-3xl leading-8 text-center text-lg sm:text-base font-semibold text-green-400">Kami memadukan keahlian Arsitektur, Struktur, MEP, dan Pengurus
           permit untuk membangun fasilitas industri yang efisien, aman, dan patuh regulasi.
         </p>
         
@@ -253,7 +259,7 @@ function Homepage() {
 
                 <div className="min-w-0">
                   <h3 className="text-2xl font-bold text-white sm:text-3xl md:text-4xl">Hubungi No:</h3>
-                  <p className="mt-3 text-sm text-gray-200 sm:mt-4 sm:text-base md:text-lg">0254-7877039</p>
+                  <p className="mt-3 text-sm text-gray-200 sm:mt-4 sm:text-base md:text-lg">0254-7877039 (Senin - Jumat: 8.00 - 17.00)</p>
 
                 </div>
               </div>

@@ -16,7 +16,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path="/credential" element={<Imgpage />} />
       <Route path= "/project" element={<Project />} />
       <Route path="/layanan" element={<Layanan />} />
-      <Route path="/slf" element={<Layanan />} />
     </Routes>
   </BrowserRouter>
 

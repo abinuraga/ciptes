@@ -15,7 +15,7 @@ function Navbar () {
     setServiceOpen(false);
   };
     return (
-        <header className="fixed top-0 left-0 z-50 w-full bg-white/30 backdrop-blur-md shadow-md">
+        <header className="relative w-full bg-white/30 backdrop-blur-md shadow-md">
 
             <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
                 {/* logo */}
@@ -37,25 +37,25 @@ function Navbar () {
                     <ul className="flex w-full gap-2 text-[9px] items-center sm:gap-3 sm-text-[11px] md:text-base md:gap-8 font-medium text-gray-700">
 
                         <li className="shrink-0">
-                            <HashLink smooth to="/#hero" className="whitespace-nowrap text-gray-300 transition hover:text-blue-300">
+                            <HashLink smooth to="/#hero" className="whitespace-nowrap text-orange-500 transition hover:text-blue-300">
                             Beranda
                             </HashLink>
                         </li>
 
                         <li className="shrink-0">
-                            <HashLink smooth to="/#contact" className="whitespace-nowrap text-gray-300 transition hover:text-blue-300">
+                            <HashLink smooth to="/#contact" className="whitespace-nowrap text-orange-500 transition hover:text-blue-300">
                             Kontak
                             </HashLink>
                         </li>
 
                         <li className="shrink-0">
-                            <Link to="/credential" className="whitespace-nowrap transition text-gray-300 hover:text-blue-300">
+                            <Link to="/credential" className="whitespace-nowrap transition text-orange-500 hover:text-blue-300">
                             Kompetensi
                             </Link>
                         </li>
 
                         <li className="shrink-0">
-                            <Link to="/layanan" className="whitespace-nowrap transition text-gray-300 hover:text-blue-300">
+                            <Link to="/layanan" className="whitespace-nowrap transition text-orange-500 hover:text-blue-300">
                             Layanan 
                             </Link>
                         </li>
@@ -70,7 +70,7 @@ function Navbar () {
                 type="button"
                 onClick={() => setServiceOpen(!serviceOpen)}
                 aria-expanded={serviceOpen}
-                className="flex items-center gap-2 whitespace-nowrap py-2 text-gray-300 transition hover:text-blue-600"
+                className="flex items-center gap-2 whitespace-nowrap py-2 text-orange-500 transition hover:text-blue-600"
               >
                 Proyek
                 <FaChevronDown
@@ -144,6 +144,12 @@ function Navbar () {
                             <HashLink smooth
                             to="/credential" onClick={closeMenu}
                             className="block py-3 transition hover:text-blue-600">Kompetensi</HashLink>
+                        </li>
+
+                        <li>
+                            <HashLink smooth
+                            to="/layanan" onClick={closeMenu}
+                            className="block py-3 transition hover:text-blue-600">Layanan</HashLink>
                         </li>
 
                         
