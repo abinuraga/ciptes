@@ -1,9 +1,10 @@
 import { useEffect } from "react";
+import { useState } from "react";
 import AOS from "aos";
 import 'aos/dist/aos';
 import bgImage from "./img/bg-8.webp"
 import bgImage2 from "./img/bg-7.jpg"
-import {FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaGavel,} from "react-icons/fa";
+import {FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaGavel, FaArrowUp, FaArrowLeft, FaArrowRight,} from "react-icons/fa";
 import {LuUsersRound, LuChartColumnIncreasing, LuClock } from "react-icons/lu";
 import Navbar from "./component/Navbar";
 import Logocaraousel from "./component/caraousel";
@@ -12,8 +13,11 @@ import { HashLink } from "react-router-hash-link";
 import "react-photo-view/dist/react-photo-view.css"
 
 function Homepage() {
-  
 
+  // Mengatur visibilitas tombol scroll
+  const [showScroll, setShowScroll] = useState(false);
+  
+  //efek animasi AOS
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -26,6 +30,27 @@ function Homepage() {
       behavior: "smooth",
     });
   }, []);
+
+  //Mendeteksi posisi scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScroll(window.scrollY > 300);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  //Fungsi kembali keatas
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
     return (
         <>
@@ -210,6 +235,151 @@ function Homepage() {
         </div>
       </section>
 
+      {/*proses perizinnan*/}
+      <section
+      id="proses"
+      className="w-full overflow-hidden bg-gradient-to-r from-gray-50 via [#fcfbf6] to-[#fff9e9] px-4 py-16 sm:px-6
+      sm:py-20 md:py-24">
+
+        {/*header*/}
+        <div className="mb-14 text-center" data-aos="fade-down" data-aos-delay="100">
+
+          <span className="inline-block rounded-full bg-[#1c315f] px-5 py-2 text-sm font-semibold text-white">
+            Proses kami
+          </span>
+
+          <h2 className="mt-5 text-2xl font-bold text-[#17b50] sm:text-3xl md:text-4xl">
+            Alur Proses Konsultasi
+          </h2>
+
+          <p className="mt-4 text-sm leading-7 text-[#24395d] sm:text-base md:text-lg">
+            Langkah-langkah proses kerja konsultasi kami
+          </p>
+        </div>
+
+        {/*Timeline Desktop*/}
+        <div className="relative hidden lg:block">
+
+          {/* Garis timeline */}
+          <div className="absolute left-[6%] right-[6%] top-[9px] h-[2px] bg-gray-300"></div>
+
+          {/* panah kiri */}
+          <FaArrowLeft className="absolute -left-1 -top-[3px] text-xl text-gray-700"/>
+          {/* panah kanan */}
+          <FaArrowRight className="absolute -left-1 -top-[3px] text-xl text-gray-700"/>
+          {/* timeline konten */}
+          <div className="relative grid grid-cols-6 gap-4">
+            {[
+              {
+                title: "Konsultasi Awal",
+                description: "Hubungi kami untuk konsultasi dan analisa kebutuhan perizinan",
+              },
+
+              {
+                title: "Survey & Analisa",
+                description: "Tim kami melakukan survey lokasi dan menganalisa dokumen yang dibutuhkan",
+              },
+
+              {
+                title: "Persiapan Dokumen",
+                description: "Mempersiapkan dan melengkapi semua persyaratan dokumen perizinan",
+              },
+
+              {
+                title: "Verifikasi & Review",
+                description: "Tim teknis akan memverifikasi kelengkapan dokumen",
+              },
+
+              {
+                title: "Pengajuan ke Instansi",
+                description: "Dokumen diajukan ke instansi terkait proses yang transparan",
+              },
+
+              {
+                title: "Penerbitan Izin",
+                description: "Sertifikat terbit dan diserahkan beserta dokumentasi lengkap",
+              },
+            ].map((step, index) => (
+              <div
+              key={index}
+              className="flex flex-col items-center text-center" data-aos="faded down" data-aos-delay={100 + index * 100}>
+
+                {/* titik timeline */}
+                <div className="z-10 h-[18px] w-[18px] shrink-0 rounded-full bg-black"></div>
+
+                {/* Judul */}
+                <h3 className="mt-3 min-h-[52px] text-base font-bold leading-6 text-[#172b50] xl:text-xl">
+                  {step.title}
+                </h3>
+
+                {/* deskripsi */}
+                <p className="mt-3 text-sm leading-[23px] text-[#24395d]">
+                  {step.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* timeline mobile dan tablet */}
+        <div className="relative lg:hidden">
+
+          {/* garis vertikal */}
+          <div className="absolute bottom-5 left-[9px] top-2 w-[2px] bg-gray-300"></div>
+
+          <div className="space-y-9">
+            {[
+              {
+                title: "Konsultasi Awal",
+                description: "Hubungi kami untuk konsultasi dan analisa kebutuhan perizinan",
+              },
+
+              {
+                title: "Survey & Analisa",
+                description: "Tim kami melakukan survey lokasi dan menganalisa dokumen yang dibutuhkan",
+              },
+
+              {
+                title: "Persiapan Dokumen",
+                description: "Mempersiapkan dan melengkapi semua persyaratan dokumen perizinan",
+              },
+
+              {
+                title: "Verifikasi & Review",
+                description: "Tim teknis akan memverifikasi kelengkapan dokumen",
+              },
+
+              {
+                title: "Pengajuan ke Instansi",
+                description: "Dokumen diajukan ke instansi terkait proses yang transparan",
+              },
+
+              {
+                title: "Penerbitan Izin",
+                description: "Sertifikat terbit dan diserahkan beserta dokumentasi lengkap",
+              },
+            ].map ((step, index) => (
+              <div
+              key={index}
+              className="relative flex gap-6" data-aos="fade-down" data-aos-delay={100 + index * 100}>
+                {/* titik */}
+                <div className="relative z-10 mt-1 h-5 w-5 shrink-0 rounded-full border-4 border-white bg-black shadow-sm"></div>
+
+                {/* konten */}
+                <div className="pb-1">
+                  <h3 className="text-lg font-bold text-[#172b50]">
+                    {step.title}
+                  </h3>
+                  <p className="mt-2 text-sm leading-6 text-[#24395d]">
+                    {step.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       
       
       
@@ -333,6 +503,17 @@ function Homepage() {
             </div>
           </div>
         </footer>
+
+        {/* Button Back to top */}
+        {showScroll && (
+          <button
+          onClick={scrollToTop}
+          className="fixed bottom-6 right-6 z-50 flex h-12 w-12 items-center justify-center 
+          rounded-full bg-orange-600 text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-orange-600"
+          aria-label="Kembali ke atas">
+            <FaArrowUp className="text-xl" />
+          </button>
+        )}
 
         </>
     )
