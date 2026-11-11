@@ -10,6 +10,11 @@ import Navbar from "./component/Navbar";
 import Logocaraousel from "./component/caraousel";
 import { HashLink } from "react-router-hash-link";
 
+import icon1 from "./img/icon_gedung.png";
+import icon2 from "./img/pbg_icon.png";
+import icon3 from "./img/sertif_icon.png";
+import icon4 from "./img/arsi_icon.png";
+
 import "react-photo-view/dist/react-photo-view.css"
 
 function Homepage() {
@@ -231,6 +236,86 @@ function Homepage() {
             
           </div>
           
+          </div>
+        </div>
+      </section>
+
+      {/* Layanan */}
+      <section id="layanan"
+      className="w-full bg[#05bfd2] px-4 py-16 sm:px-6 sm:py-20 md:py-24">
+
+        <div className="mx-auto w-full max-w-7xl">
+
+          {/* Heading */}
+          <div className="mb-8 text-center sm:mb-10" data-aos="fade-left" data-aos-delay="100">
+
+            <h2 className="text-3xl fon-bold tracking-wide text-white sm:text-4xl md:text-5xl">
+              LAYANAN KAMI
+            </h2>
+          </div>
+
+          {/* Service grid */}
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+
+            {[
+              {
+                image: icon1,
+                title: "SERTIFIKAT LAIK FUNGSI (SLF)",
+                description: "Menyediakan jasa konsultan SLF untuk memastikan suatu bangunan telah memenuhi persyaratan teknis."
+              },
+
+              {
+                image: icon2,
+                title: "PERSETUJUAN BANGUNAN GEDUNG (PBG)",
+                description: "Menyediakan jasa konsultan PBG izin bagi pemilik bangunan untuk membangun, mengubah, memperluas, mengurangi sesuai standar teknis",
+              },
+
+              {
+                image: icon3,
+                title: "PERIZINAN LINGKUNGAN",
+                description: "Jasa konsultan yang mengukur dampak pembangunan sebuah bangunan kepada lingkungan sekitar",
+              },
+
+              {
+                image: icon4,
+                title: "ARSITEK",
+                description: "Menyediakan gambar skema yang tepat.",
+              },
+            ].map((service, index) => (
+              <div key={index}
+              className="flex h-full flex-col items-center rounded-md bg-[#07869a] px-5 py-6 text-center shadow-md transition
+              duration-300 hover:-translate-y-2 hover:shadow-xl sm:px-4 sm:py-6" data-aos="fade-left" data-aos-delay={100 + index * 100}>
+
+                {/* gambar layanan */}
+                <div className="mb-5 flex h-[110px] w-[110px] shrink-0 items-center justify-center overflow-hidden bg-[#05798c]">
+                  <img
+                  src={service.image}
+                  alt={service.title}
+                  loading="lazy"
+                  className="h-full w-full object-contain p-1"/>
+                </div>
+
+                {/* Judul */}
+                <h3 className="mb-3 min-h-[48px] text-base font-bold leading-5 text-white sm:text-base">
+                  {service.title}
+                </h3>
+
+                {/* Deskripsi */}
+                <p className="mb-5 flex-1 text-sm leading-6 text-cyan-50">
+                  {service.description}
+                </p>
+
+              </div>
+
+            ))}
+          </div>
+
+          {/* tombol link layanan */}
+          <div className="mt-9 flex justify-center sm:mt-10" data-aos="fade-up" data-aos-delay="200">
+            <a href="/layanan" className="inline-flex min-w-[190] items-center justify-center rounded-full bg-[#ffad59]
+            px-8 py-3 text-sm font-semibold text-white shadow-md transition duration-300 hover:bg-orange-500 hover:shadow-lg sm:text-base">
+              Lihat Selengkapnya
+            </a>
           </div>
         </div>
       </section>
