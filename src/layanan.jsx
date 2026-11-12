@@ -9,6 +9,7 @@ import bg1 from "./img/mekanik.jpg";
 import bg2 from "./img/perencanaan.jpg";
 import bg3 from "./img/konstruk.jpg";
 import bg4 from "./img/gedung_lingkungan.jpg";
+import ScrollTop from "./component/scrolltop";
 
 function Layanan() {
 
@@ -25,6 +26,7 @@ function Layanan() {
     return (
         <>
         <Navbar/>
+        <ScrollTop/>
 
         <section>
         <section id="pelayanan1"  className="relative flex min-h-[60vh] w-full flex-col items-center px-8  justify-center overflow-hidden bg-White-100 pt-24"

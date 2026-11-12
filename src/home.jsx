@@ -9,6 +9,7 @@ import {LuUsersRound, LuChartColumnIncreasing, LuClock } from "react-icons/lu";
 import Navbar from "./component/Navbar";
 import Logocaraousel from "./component/caraousel";
 import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 
 import icon1 from "./img/icon_gedung.png";
 import icon2 from "./img/pbg_icon.png";
@@ -247,12 +248,14 @@ function Homepage() {
         <div className="mx-auto w-full max-w-7xl">
 
           {/* Heading */}
-          <div className="mb-8 text-center sm:mb-10" data-aos="fade-left" data-aos-delay="100">
+          <div className="mb-14 text-center" data-aos="fade-down" data-aos-delay="100">
 
-            <h2 className="text-3xl fon-bold tracking-wide text-white sm:text-4xl md:text-5xl">
-              LAYANAN KAMI
-            </h2>
-          </div>
+          <span className="inline-block rounded-full bg-blue-600 px-5 py-2 text-sm font-semibold text-white">
+            LAYANAN KAMI
+          </span>
+
+          
+        </div>
 
           {/* Service grid */}
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -279,15 +282,15 @@ function Homepage() {
               {
                 image: icon4,
                 title: "ARSITEK",
-                description: "Menyediakan gambar skema yang tepat.",
+                description: "Bertanggung jawab dalam merancang dan mengembangkan konsep desain arsitektur sesuai dengan kebutuhan dan karakteristik proyek.",
               },
             ].map((service, index) => (
               <div key={index}
-              className="flex h-full flex-col items-center rounded-md bg-[#07869a] px-5 py-6 text-center shadow-md transition
+              className="flex h-full flex-col items-center rounded-md bg-green-700 px-5 py-6 text-center shadow-md transition
               duration-300 hover:-translate-y-2 hover:shadow-xl sm:px-4 sm:py-6" data-aos="fade-left" data-aos-delay={100 + index * 100}>
 
                 {/* gambar layanan */}
-                <div className="mb-5 flex h-[110px] w-[110px] shrink-0 items-center justify-center overflow-hidden bg-[#05798c]">
+                <div className="mb-5 flex h-[110px] w-[110px] shrink-0 items-center justify-center overflow-hidden bg-green-700">
                   <img
                   src={service.image}
                   alt={service.title}
@@ -312,10 +315,13 @@ function Homepage() {
 
           {/* tombol link layanan */}
           <div className="mt-9 flex justify-center sm:mt-10" data-aos="fade-up" data-aos-delay="200">
-            <a href="/layanan" className="inline-flex min-w-[190] items-center justify-center rounded-full bg-[#ffad59]
-            px-8 py-3 text-sm font-semibold text-white shadow-md transition duration-300 hover:bg-orange-500 hover:shadow-lg sm:text-base">
-              Lihat Selengkapnya
-            </a>
+
+            <Link smooth to="/layanan" className=" mt-8 ml-30 mb-12 inline-flex flex flex-col items-center justify-center rounded-full 
+              bg-orange-600 px-8 py-3 text-[20px] font-medium tracking-wide 
+            text-white transition-all duration-500 hover:-translate-y-1 
+            hover:bg-sky-500 hover:shadow-lg">Lihat Selengkapnya</Link>
+        
+
           </div>
         </div>
       </section>
@@ -474,12 +480,20 @@ function Homepage() {
         id="contact"
         className="w-full bg-white px-4 py-16 sm:px-6 sm:py-20 md:py-24"
       >
-        <div  className="mx-auto w-full max-w-7xl text-center" data-aos="fade-up" data-aos-delay="200">
-          <h2 className="mb-6 text-3xl font-bold sm:text-3xl md:text-4xl">
+        {/*header*/}
+        <div className="mb-14 text-center" data-aos="fade-down" data-aos-delay="100">
+
+          <span className="inline-block rounded-full bg-blue-600 px-5 py-2 text-sm font-semibold text-white">
             KONTAK
+          </span>
+
+          <h2 className="mt-5 text-2xl font-bold text-[#17b50] sm:text-3xl md:text-4xl">
+            Hubungi kami 
           </h2>
-          <div className="mx-auto mt-5 h-1 w-16 rounded bg-sky-500 sm:w-20"></div>
-          <p className="mt-6 text-base leading-7 text-gray-600 sm:text-lg md:text-lg">Hubungi kantor pusat kami melalui data dibawah.</p>
+
+          <p className="mt-4 text-sm leading-7 text-[#24395d] sm:text-base md:text-lg">
+            Melalui data informasi dibawah ini
+          </p>
         </div>
       </section>
 
