@@ -264,19 +264,19 @@ function Homepage() {
               {
                 image: icon1,
                 title: "SERTIFIKAT LAIK FUNGSI (SLF)",
-                description: "Menyediakan jasa konsultan SLF untuk memastikan suatu bangunan telah memenuhi persyaratan teknis."
+                description: "Menyediakan layanan konsultasi SLF untuk memastikan bangunan gedung memenuhi persyaratan teknis dan ketentuan kelaikan fungsi sesuai regulasi yang berlaku.",
               },
 
               {
                 image: icon2,
                 title: "PERSETUJUAN BANGUNAN GEDUNG (PBG)",
-                description: "Menyediakan jasa konsultan PBG izin bagi pemilik bangunan untuk membangun, mengubah, memperluas, mengurangi sesuai standar teknis",
+                description: "Menyediakan layanan konsultasi PBG bagi pemilik bangunan dalam memenuhi persyaratan pembangunan, perubahan, perluasan, maupun pengurangan bangunan gedung sesuai standar teknis dan regulasi yang berlaku.",
               },
 
               {
                 image: icon3,
                 title: "PERIZINAN LINGKUNGAN",
-                description: "Jasa konsultan yang mengukur dampak pembangunan sebuah bangunan kepada lingkungan sekitar",
+                description: "Menyediakan konsultasi perizinan lingkungan untuk mengidentifikasi, mengevaluasi, serta memastikan dampak kegiatan pembangunan terhadap lingkungan sekitar sesuai ketentuan dan regulasi yang berlaku.",
               },
 
               {
