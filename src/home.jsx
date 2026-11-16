@@ -83,7 +83,7 @@ function Homepage() {
         <HashLink smooth to="/#contact" className="relative z-10 mt-8 inline-flex items-center justify-center rounded-full 
         bg-orange-600 px-8 py-3 text-[20px] font-medium tracking-wide 
         text-white transition-all duration-500 hover:-translate-y-1 
-        hover:bg-sky-500 hover:shadow-lg">Konsultasi Sekarang</HashLink>
+        hover:bg-sky-500 hover:shadow-lg sm:mb-12">Konsultasi Sekarang</HashLink>
         
       </section>
       
