@@ -65,7 +65,7 @@ function Homepage() {
       {/* Hero */}
       <section
         id="hero"
-        className="relative flex min-h-screen w-full flex-col items-center px-8  justify-center overflow-hidden bg-White-100 pt-24"
+        className="relative flex min-h-screen w-full flex-col items-center px-8  justify-center overflow-hidden bg-White-100 pt-24 sm:mb-12"
       >
         <img src={bgImage2} alt="background-effect" className="absolute inset-0 z-0 h-full w-full object-cover"/>
 
@@ -201,7 +201,7 @@ function Homepage() {
 
       <section
       id="misi">
-        <div className="mx-auto max-w-8xl px-5 bg-white">
+        <div className="mx-auto max-w-8xl px-5 bg-white mb-16">
 
           <div className="grid w-full grid-cols-1 gap-6 px-4 sm:px-6 md:grid-cols-2 md:gap-8 lg:grid-cols-4 lg:px-8">
 
@@ -243,7 +243,7 @@ function Homepage() {
 
       {/* Layanan */}
       <section id="layanan"
-      className="w-full bg[#05bfd2] px-4 py-16 sm:px-6 sm:py-20 md:py-24">
+      className="w-full bg-blue-100 px-4 py-16 sm:px-6 sm:py-20 md:py-24">
 
         <div className="mx-auto w-full max-w-7xl">
 
@@ -316,7 +316,7 @@ function Homepage() {
           {/* tombol link layanan */}
           <div className="mt-9 flex justify-center sm:mt-10" data-aos="fade-up" data-aos-delay="200">
 
-            <Link smooth to="/layanan" className=" mt-8 ml-30 mb-12 inline-flex flex flex-col items-center justify-center rounded-full 
+            <Link smooth to="/layanan" className=" mt-8 mb-12 inline-flex flex flex-col items-center justify-center rounded-full 
               bg-orange-600 px-8 py-3 text-[20px] font-medium tracking-wide 
             text-white transition-all duration-500 hover:-translate-y-1 
             hover:bg-sky-500 hover:shadow-lg">Lihat Selengkapnya</Link>

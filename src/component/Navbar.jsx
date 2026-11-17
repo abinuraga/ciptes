@@ -2,13 +2,13 @@ import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import logo from "../img/logo_perusahaan.jpeg";
 import { useState } from "react";
-import { FaBars, FaTimes, FaChevronDown } from "react-icons/fa";
+import { FaBars, FaTimes, } from "react-icons/fa";
 
 
 function Navbar () {
     
      const [isOpen, setIsOpen] = useState(false);
-  const [serviceOpen, setServiceOpen] = useState(false);
+  const [, setServiceOpen] = useState(false);
 
   const closeMenu = () => {
     setIsOpen(false);
@@ -60,62 +60,16 @@ function Navbar () {
                             </Link>
                         </li>
 
-                       {/* Dropdown Layanan Desktop */}
-            <li
-              className="relative"
-              onMouseEnter={() => setServiceOpen(true)}
-              onMouseLeave={() => setServiceOpen(false)}
-            >
-              <button
-                type="button"
-                onClick={() => setServiceOpen(!serviceOpen)}
-                aria-expanded={serviceOpen}
-                className="flex items-center gap-2 whitespace-nowrap py-2 text-orange-500 transition hover:text-blue-600"
-              >
-                Proyek
-                <FaChevronDown
-                  className={`text-xs transition-transform duration-200 ${
-                    serviceOpen ? "rotate-180" : ""
-                  }`}
-                />
-              </button>
-
-              {serviceOpen && (
-                <ul className="absolute right-0 top-full z-50 min-w-56 rounded-lg backdrop-blur-md border border-white/10 bg-white/10 py-2 shadow-lg">
-
-                  <li>
+                        <li>
                     <Link
                       to="/project"
-                      onClick={closeMenu}
-                      className="block px-5 py-3 text-green-500 hover:bg-blue-50  hover:text-blue-700"
-                    >
-                      Semua Proyek
+                    
+                      className="whitespace-nowrap transition text-orange-500 hover:text-blue-300">
+                      Proyek
                     </Link>
                   </li>
 
-                  <li>
-                    <Link
-                      to="/slf"
-                      onClick={closeMenu}
-                      className="block px-5 py-3 text-green-500 hover:bg-blue-50 hover:text-blue-700"
-                    >
-                      SLF
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link
-                      to="/project#perizinan"
-                      onClick={closeMenu}
-                      className="block px-5 py-3 text-green-500 hover:bg-blue-50 hover:text-blue-700"
-                    >
-                      PBG
-                    </Link>
-                  </li>
-
-                </ul>
-              )}
-            </li>
+                    
 
                     </ul>
                 </nav>
@@ -152,27 +106,7 @@ function Navbar () {
                             className="block py-3 transition hover:text-blue-600">Layanan</HashLink>
                         </li>
 
-                        
-                        {/* Dropdown Layanan HP */}
-            <li>
-              <button
-                type="button"
-                onClick={() => setServiceOpen(!serviceOpen)}
-                aria-expanded={serviceOpen}
-                className="flex w-full items-center justify-between py-3 text-left hover:text-blue-600"
-              >
-                Proyek
-                <FaChevronDown
-                  className={`text-xs transition-transform duration-200 ${
-                    serviceOpen ? "rotate-180" : ""
-                  }`}
-                />
-              </button>
-
-              {serviceOpen && (
-                <ul className="mb-2 ml-3 border-l-2 border-blue-200 pl-3">
-
-                  <li>
+                        <li>
                     <Link
                       to="/project"
                       onClick={closeMenu}
@@ -182,29 +116,8 @@ function Navbar () {
                     </Link>
                   </li>
 
-                  <li>
-                    <Link
-                      to="/project#perencanaan"
-                      onClick={closeMenu}
-                      className="block py-3 text-green-500 hover:text-blue-600"
-                    >
-                      Perencanaan Bangunan
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link
-                      to="/project#perizinan"
-                      onClick={closeMenu}
-                      className="block py-3 text-green-500 hover:text-blue-600"
-                    >
-                      Pengurusan Perizinan
-                    </Link>
-                  </li>
-
-                </ul>
-              )}
-            </li>
+                        
+                   
                     </ul>
                 </nav>
             )}
