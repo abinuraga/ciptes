@@ -65,25 +65,25 @@ function Homepage() {
       {/* Hero */}
       <section
         id="hero"
-        className="relative flex min-h-screen w-full flex-col items-center px-8  justify-center overflow-hidden bg-White-100 pt-24 sm:mb-12"
+        className="relative flex min-h-screen w-full flex-col items-center px-8  justify-center overflow-hidden bg-White-100 pt-24 sm:mb-24"
       >
         <img src={bgImage2} alt="background-effect" className="absolute inset-0 z-0 h-full w-full object-cover"/>
 
         {/* overlay */}
-        <div className="absolute inset-0 z-0 bg-blue-950/65"></div>
+        <div className="absolute inset-0 z-0 bg-blue-950/65 sm:mb-24"></div>
         
-        <h1 className="relative z-10 max-w-auto leading-11 text-center text-5xl font-bold text-green-300 sm:text-base md:text-4xl">
+        <h1 className="relative z-10 max-w-auto leading-11 text-center text-5xl font-bold text-green-300 sm:text-sm md:text-4xl">
           Konsultan Perencanaan Bangunan Industri : Desain Terintegrasi & Pengurusan Izin Tuntas dalam Satu Atap.
         </h1> 
         
-        <p className="relative z-10 mt-10 mr-3 ml-3 max-w-3xl leading-8 text-center text-lg sm:text-sm font-semibold text-green-400">Kami memadukan keahlian Arsitektur, Struktur, MEP, dan Pengurus
+        <p className="relative z-10 mt-10 mr-3 ml-3 max-w-3xl leading-8 text-center text-lg sm:text-xs font-semibold text-green-400">Kami memadukan keahlian Arsitektur, Struktur, MEP, dan Pengurus
           permit untuk membangun fasilitas industri yang efisien, aman, dan patuh regulasi.
         </p>
         
         <HashLink smooth to="/#contact" className="relative z-10 mt-8 inline-flex items-center justify-center rounded-full 
         bg-orange-600 px-8 py-3 text-[20px] font-medium tracking-wide 
         text-white transition-all duration-500 hover:-translate-y-1 
-        hover:bg-sky-500 hover:shadow-lg sm:mb-12">Konsultasi Sekarang</HashLink>
+        hover:bg-sky-500 hover:shadow-lg sm:mb-24">Konsultasi Sekarang</HashLink>
         
       </section>
       
